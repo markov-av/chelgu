@@ -44,7 +44,7 @@ def resize_console(rows, cols):
 def create_initial_grid(rows, cols):
     """
     Creates a random list of lists that contains 1s and 0s to represent the cells in Conway's Game of Life.
-
+    #TODO Создает случайный список списков, который содержит 1 и 0 для представления ячеек в игре жизни Конвея.
     :param rows: Int - The number of rows that the Game of Life grid will have
     :param cols: Int - The number of columns that the Game of Life grid will have
     :return: Int[][] - A list of lists containing 1s for live cells and 0s for dead cells
@@ -66,7 +66,7 @@ def create_initial_grid(rows, cols):
 def print_grid(rows, cols, grid, generation):
     """
     Prints to console the Game of Life grid
-
+    #TODO: prints сетки Game of Life
     :param rows: Int - The number of rows that the Game of Life grid has
     :param cols: Int - The number of columns that the Game of Life grid has
     :param grid: Int[][] - The list of lists that will be used to represent the Game of Life grid
@@ -94,7 +94,7 @@ def create_next_grid(rows, cols, grid, next_grid):
     """
     Analyzes the current generation of the Game of Life grid and determines what cells live and die in the next
     generation of the Game of Life grid.
-
+    #TODO: Анализирует текущее поколение сетки Игры Жизни и определяет, какие клетки живут и умирают в следующем поколение сетки Игры Жизни.
     :param rows: Int - The number of rows that the Game of Life grid has
     :param cols: Int - The number of columns that the Game of Life grid has
     :param grid: Int[][] - The list of lists that will be used to represent the current generation Game of Life grid
@@ -122,7 +122,7 @@ def create_next_grid(rows, cols, grid, next_grid):
 def get_live_neighbors(row, col, rows, cols, grid):
     """
     Counts the number of live cells surrounding a center cell at grid[row][cell].
-
+    #TODO: Подсчитывает количество живых клеток, окружающих центральную ячейку в сетке [строка] [ячейка].
     :param row: Int - The row of the center cell
     :param col: Int - The column of the center cell
     :param rows: Int - The number of rows that the Game of Life grid has
@@ -144,7 +144,7 @@ def get_live_neighbors(row, col, rows, cols, grid):
 def grid_changing(rows, cols, grid, next_grid):
     """
     Checks to see if the current generation Game of Life grid is the same as the next generation Game of Life grid.
-
+    #TODO: Проверяет, совпадает ли сетка Game of Life текущего поколения с сеткой Game of Life следующего поколения.
     :param rows: Int - The number of rows that the Game of Life grid has
     :param cols: Int - The number of columns that the Game of Life grid has
     :param grid: Int[][] - The list of lists that will be used to represent the current generation Game of Life grid
@@ -164,7 +164,7 @@ def grid_changing(rows, cols, grid, next_grid):
 def get_integer_value(prompt, low, high):
     """
     Asks the user for integer input and between given bounds low and high.
-
+    #TODO: Запрашивает у пользователя целочисленный ввод и между заданными границами - низким и высоким.
     :param prompt: String - The string to prompt the user for input with
     :param low: Int - The low bound that the user must stay within
     :param high: Int - The high bound that the user must stay within
@@ -186,6 +186,7 @@ def get_integer_value(prompt, low, high):
 
 def run_game():
     """
+    #TODO: Запрашивает у пользователя вводные данные, чтобы настроить игру «Жизнь» на определенное количество поколений.
     Asks the user for input to setup the Game of Life to run for a given number of generations.
 
     """
